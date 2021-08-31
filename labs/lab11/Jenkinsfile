@@ -1,8 +1,5 @@
 def app = "maven-code-coverage"  // This variable is global
 node('small') {
-    tools {
-        maven "mvn"
-    }
     stage('Build') { // for display purposes
         def course = "jenkins-course"  // This variable is local to this stage
         git branch: 'main', url: "https://github.com/axel-sirota/${course}/"
