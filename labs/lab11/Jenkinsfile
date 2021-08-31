@@ -11,6 +11,6 @@ node('small') {
 
         // In scripted pipelines we don't have post actions!
         junit '**/target/surefire-reports/TEST-*.xml'
-        jacoco buildOverBuild: true, deltaBranchCoverage: '80', deltaClassCoverage: '80', deltaComplexityCoverage: '80', deltaInstructionCoverage: '80', deltaLineCoverage: '80', deltaMethodCoverage: '80'
+        jacoco buildOverBuild: true, deltaBranchCoverage: '80', deltaClassCoverage: '80', deltaComplexityCoverage: '80', deltaInstructionCoverage: '80', deltaLineCoverage: '100', deltaMethodCoverage: '80'
     }
 }
